@@ -19,6 +19,7 @@ h2{
 h3{
     font-size:1.5em;
     color:maroon;
+    margin-bottom:.5em;
 
 
 }
@@ -29,44 +30,55 @@ p{
 
 img{
     border-radius: 10px;
+    max-width:100%;
+    height:auto;
 }
 body{
 display:flex;
-flex-flow:row wrap;
 justify-content: center;
-padding:30px;
+align-items:center;
+padding:5vw;
 background-color:  hsla(14, 45%, 36%, 0.285);
-height: 100vh;
-
+min-height: 100vh;
 }
 
 
 
 .recipe-container{
     display:flex;
-    flex-flow:row wrap;
+    flex-direction:column;
     justify-content:left ;
-    padding:3em;
- margin:3em;
+    padding:1.5em;
+ margin:1.5em;
  background-color: white;
  border-radius:10px;
- max-width: 45em;
+ max-width: 90%;
+ width:100%;
+ box-sizing: border-box;
  
 
 }
 .cook-time{
-    margin:30px;
-    padding:30px;
-    width:75%;
+    margin:1em 0;
+    padding:1.5em;
+    width:100%;
     background-color:rgb(240, 222, 225);
+    box-sizing:border-box;
+   
 }
 .ingredients{
-    margin-bottom:30px;
+    margin-bottom:1.5em;
+    padding:1.5em
+    
 }
 .instructions{
-    margin-bottom:30px;
+    margin-bottom:1.5em;
+    padding:1.5em
 }
 .nutrition{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:1em;
     
 }
 .nutrition-left{}
@@ -78,4 +90,26 @@ height: 100vh;
 
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }s
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:768px){
+    body{
+        padding:15px;
+    }
+}
+
+.recipe-container{
+    padding:1rem;
+    margin:1rem;
+}
+
+.cook-time{
+    width:100%;
+    margin:15px 0;
+    padding:15px;
+
+    
+}
+body, .recipe-container{
+    flex-direction:column
+}
