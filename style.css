@@ -7,37 +7,38 @@ margin:0;
 padding: 0;
 }
 h1{
-    font-size: 1.875em;
-
+    font-size: 2.5em;
+    display:block;
+    text-align:justify;
+    margin-bottom:1em;
 }
 h2{
     
     font-size:1.125em;
-    color:maroon;
-
+    color:rgb(130, 46, 130);
 }
 h3{
     font-size:1.5em;
     color:maroon;
     margin-bottom:.5em;
-
-
 }
 
 p{
     font-size: 1rem;
+  
     }
 
 img{
     border-radius: 10px;
     max-width:100%;
     height:auto;
+    margin-bottom:1em;
 }
 body{
 display:flex;
 justify-content: center;
 align-items:center;
-padding:5vw;
+padding:1rem;
 background-color:  hsla(14, 45%, 36%, 0.285);
 min-height: 100vh;
 }
@@ -46,24 +47,21 @@ min-height: 100vh;
 
 .recipe-container{
     display:flex;
-    flex-direction:column;
-    justify-content:left ;
+    flex-direction:column;   
     padding:1.5em;
- margin:1.5em;
- background-color: white;
- border-radius:10px;
- max-width: 90%;
- width:100%;
- box-sizing: border-box;
- 
+    background-color: white;
+    border-radius:10px;
+    max-width: 800px;
+    width:100%;
 
 }
 .cook-time{
-    margin:1em 0;
+    margin:1em 1em;
     padding:1.5em;
     width:100%;
-    background-color:rgb(240, 222, 225);
+    background-color:rgba(240, 222, 225, 0.292);
     box-sizing:border-box;
+    border-radius: 10px;
    
 }
 .ingredients{
@@ -75,14 +73,42 @@ min-height: 100vh;
     margin-bottom:1.5em;
     padding:1.5em
 }
-.nutrition{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap:1em;
-    
+
+
+.nutrition-table{
+    width:100%;
+    margin-top:10em;
 }
-.nutrition-left{}
-.nutrition-right{}
+
+table{
+    width:75%;
+ margin:1em auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+
+.nutrition td{
+    padding:0.5em;
+    border-bottom: 1px solid #ddd;
+}
+ul, ol{
+    padding-left:1.5em;
+    margin-top:0.5em;
+}
+
+li{
+margin-left:1em;
+margin-right:1em;
+margin-bottom:.5em;
+}
+
+.nutrition-left{
+font-weight: bold;
+}
 
 
 
